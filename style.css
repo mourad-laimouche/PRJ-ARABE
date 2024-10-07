@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     text-align: center;
   
@@ -13,11 +15,14 @@ overflow: hidden;
 
 h1 {
  color: #eeeeed;
+ font-family: "Amiri", serif;
 }
 
 
 .buttons {
-    margin-top: 20px;
+  position: absolute;
+  top: 100px;
+  right: 200px;
 }
 
 button {
@@ -30,9 +35,6 @@ button {
     font-size: 16px;
 }
 
-button:hover {
-    background-color: #45a049;
-}
 
 
 
@@ -423,9 +425,9 @@ button:hover {
     display: flex;
     align-items: center;
     position: relative;
-    width: 220px;
+    width: 210px;
     height: 60px;
-    padding: 15px 30px;
+    padding: 10px 30px;
     font-size: 18px;
     text-decoration: none;
     color: #fff;
@@ -446,7 +448,7 @@ button:hover {
   
   .unique-button span {
     display: block;
-    margin-left: 0.3em;
+    
     transition: all 0.3s ease-in-out;
   }
   
