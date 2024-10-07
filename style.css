@@ -16,6 +16,11 @@ overflow: hidden;
 h1 {
  color: #eeeeed;
  font-family: "Amiri", serif;
+ text-shadow: 
+ 3px 3px 0 black, /* Bordure droite */
+ -3px -3px 0 black, /* Bordure gauche */
+ 3px -3px 0 black, /* Bordure supérieure droite */
+ -3px 3px 0 black; /* Bordure inférieure gauche */
 }
 
 
