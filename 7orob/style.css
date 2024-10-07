@@ -1,0 +1,56 @@
+body {
+  font-family: 'Amiri', serif;
+  direction: rtl;
+ background-image: url(./lepee-et-le-cimeterre-crop.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  color: black;
+
+  text-shadow: 
+  5px 5px 0 #fcfcfc, /* Bordure droite */
+  -5px -5px 0 #fcfcfc, /* Bordure gauche */
+  5px -5px 0 #fcfcfc, /* Bordure supérieure droite */
+  -5px 5px 0 #fcfcfc; /* Bordure inférieure gauche */
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 80%;
+  padding: 20px;
+  background-color: #060505;
+  border-radius: 10px;
+}
+
+.event {
+  background-color: #fec195;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.event:hover {
+  background-color: #ffa07a;
+}
+
+.war-info {
+  display: none;
+  background-color: #000000;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #fcfcfc;
+}
+
+.war-info h2 {
+  margin-top: 0;
+  color: #fcfcfc;
+}
