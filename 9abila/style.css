@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+background-image: url(./berber_path.jpg);
+background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.title {
+    margin-top: 15px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    color: white;
+    -webkit-text-stroke: 2px #000000; /* Adds a stroke (border) around the text */
+    animation: text-stroke-color-change 3s infinite; /* Animation for changing stroke color */
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Merienda";
+    font-size: 4em;
+    text-align: center;
+}
+
+.message-card:hover{
+  background: rgb(66,59,59);
+  background: linear-gradient(90deg, rgba(66,59,59,1) 27%, rgba(122,114,40,1) 70%);
+}
+.message-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: absolute;
+    cursor: pointer;
+}
+
+#card1 { top: 220px; left: 250px; }
+#card2 { top: 220px; left: 500px; }
+#card3 { top: 220px; left: 750px; }
+#card4 { top: 220px; left: 1000px; }
+#card5 { top: 350px; left: 250px; }
+#card6 { top: 350px; left: 500px; }
+#card7 { top: 350px; left: 750px; }
+#card8 { top: 350px; left: 1000px; }
+
+#card10 { top: 500px; left: 630px; }
+
+
+
+.message {
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styles pour la carte au centre */
+.centered {
+    
+  background: rgb(66,59,59);
+  background: linear-gradient(90deg, rgba(66,59,59,1) 27%, rgba(122,114,40,1) 70%);
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 300px;
+    font-weight: 700;
+  
+}
+
+/* Overlay */
+#overlay {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    display: none; /* Masqué par défaut */
+}
+
